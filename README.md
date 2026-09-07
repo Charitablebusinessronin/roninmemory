@@ -21,6 +21,7 @@
   <a href="#product-walkthrough">Product walkthrough</a> ·
   <a href="#product-explainers">Product explainers</a> ·
   <a href="#architecture">Architecture</a> ·
+  <a href="#how-allura-earns-trust">How Allura earns trust</a> ·
   <a href="#getting-started">Getting started</a> ·
   <a href="#mcp-api">MCP API</a> ·
   <a href="#operations">Operations</a> ·
@@ -43,13 +44,13 @@ The deployed [Epic 25 interactive demo](https://allura-governed-demo.vercel.app)
 
 ## Product explainers
 
-Six plain-language visuals explain the evidence model behind the walkthrough. They are conceptual — they show the patterns the repository implements, not a live system.
+Six branded visuals explain the framework, harness, governance, and evidence model behind the walkthrough. Each carries the Allura wordmark, the canonical palette, and a source citation.
 
 |  |  |
 | --- | --- |
-| <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/01-every-action-leaves-proof.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/01-every-action-leaves-proof.png" alt="Source, review, and result stay connected to a durable evidence record." width="420" /></a><br/><sub><strong>Every action leaves proof</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/02-access-has-boundaries.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/02-access-has-boundaries.png" alt="Two labeled workspaces on either side of a policy boundary; private work stays in its own workspace." width="420" /></a><br/><sub><strong>Access has boundaries</strong></sub> |
-| <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/03-people-review-important-changes.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/03-people-review-important-changes.png" alt="A proposal passes a policy check, then a person reviews it before it is approved or queued." width="420" /></a><br/><sub><strong>People review important changes</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/04-memory-keeps-its-history.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/04-memory-keeps-its-history.png" alt="New versions supersede old ones while append-only evidence and traceable change stay in place." width="420" /></a><br/><sub><strong>Memory keeps its history</strong></sub> |
-| <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/05-test-before-release.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/05-test-before-release.png" alt="Scenario, run, evidence, and review loop into a confident release." width="420" /></a><br/><sub><strong>Test before release</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/06-an-answer-can-show-its-work.png"><img src="docs/portfolio/allura-agentic-framework-harness/evidence-infographics/png/06-an-answer-can-show-its-work.png" alt="An answer stays attached to its source, approved memory, and decision record." width="420" /></a><br/><sub><strong>An answer can show its work</strong></sub> |
+| <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/01-framework-harness-architecture.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/01-framework-harness-architecture.png" alt="Three developer interfaces feed one governed execution path; the proof field identifies the shared controls." width="420" /></a><br/><sub><strong>Framework and harness architecture</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/02-deterministic-harness.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/02-deterministic-harness.png" alt="Run the same scenario, inspect the same path, and compare the result." width="420" /></a><br/><sub><strong>Deterministic harness</strong></sub> |
+| <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/03-enterprise-governance.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/03-enterprise-governance.png" alt="Controls belong in the execution path, where people can inspect them." width="420" /></a><br/><sub><strong>Enterprise governance</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/04-developer-interfaces.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/04-developer-interfaces.png" alt="Different engineering workflows share the same governed core." width="420" /></a><br/><sub><strong>Developer interfaces</strong></sub> |
+| <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/05-governed-memory-lifecycle.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/05-governed-memory-lifecycle.png" alt="Memory improves over time without erasing where it came from." width="420" /></a><br/><sub><strong>Governed memory lifecycle</strong></sub> | <a href="docs/portfolio/allura-agentic-framework-harness/infographics/png/06-evidence-to-release-chain.png"><img src="docs/portfolio/allura-agentic-framework-harness/infographics/png/06-evidence-to-release-chain.png" alt="A portfolio claim should lead a reviewer back to the proof." width="420" /></a><br/><sub><strong>Evidence to release chain</strong></sub> |
 
 ## Why Allura Memory
 
@@ -164,6 +165,28 @@ The `GRAPH_BACKEND=ruvector` adapter is a PostgreSQL-table implementation. It is
 ### Attribution
 
 Allura is built with and inspired by [RuVector](https://github.com/ruvnet/RuVector) (MIT, © 2025 rUv). RuVector's vector and graph-memory substrate accelerates retrieval; Allura's original contribution is the governed layer around it — tenant scoping (`group_id`), human-review-gated promotion, `SUPERSEDES` lineage, and the audit trail. See [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for the full notice, license text, and what each project owns.
+
+## How Allura earns trust
+
+These conceptual visuals explain patterns implemented in the repository. They are not a live system view.
+
+<p align="center">
+  <img src="public/readme/allura-wordmark.png" alt="Allura" width="160" />
+</p>
+
+| | |
+| --- | --- |
+| ![Every action leaves evidence](docs/readme/evidence-explainers/01-every-action-leaves-evidence.png) | ![Context stays within its boundary](docs/readme/evidence-explainers/02-context-stays-within-boundary.png) |
+| Allura preserves episodic evidence before a reviewed promotion path can create canonical knowledge. | Every read and write carries a `group_id` so tenant context stays isolated within its approved boundary. |
+| *Source: Allura_Memory README and architecture documentation.* | *Source: Allura_Memory README and architecture documentation.* |
+| | |
+| ![Review is the boundary before knowledge](docs/readme/evidence-explainers/03-review-before-knowledge.png) | ![History stays connected](docs/readme/evidence-explainers/04-history-stays-connected.png) |
+| Promotion through the curator requires governed review before episodic evidence becomes semantic knowledge. | Updates create a new version that supersedes the old one, so history stays connected through `SUPERSEDES` lineage. |
+| *Source: Allura_Memory README and architecture documentation.* | *Source: Allura_Memory README and architecture documentation.* |
+| | |
+| ![Repeat the work. Keep the evidence.](docs/readme/evidence-explainers/05-repeat-the-work-keep-evidence.png) | ![An answer can show its work](docs/readme/evidence-explainers/06-answer-can-show-its-work.png) |
+| Evaluation runs are repeatable workflows whose results are retained as evidence alongside the decisions they inform. | Retrieved context carries its source reference, review decision, and lifecycle status so an answer can always show its work. |
+| *Source: Allura_Memory README and architecture documentation.* | *Source: Allura_Memory README and architecture documentation.* |
 
 ## Getting started
 
